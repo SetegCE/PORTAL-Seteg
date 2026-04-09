@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ===== MOBILE MENU =====
+    // ===== MOBILE MENU ======
     const sidebar = document.getElementById('sidebar');
     let overlay = null;
     
