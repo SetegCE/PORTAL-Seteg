@@ -13,7 +13,7 @@
 <body>
 
     <!-- ===== SIDEBAR ===== -->
-    <aside class="sidebar" id="sidebar">
+    <aside class="sidebar" id="sidebar" aria-label="Navegação principal">
         <div class="sidebar-header">
             <div class="sidebar-logo">
                 <img src="images/favicon.png" alt="SETEG" class="sidebar-logo-img" onerror="this.style.display='none'">
@@ -21,62 +21,56 @@
             </div>
         </div>
         <nav class="sidebar-nav">
-            <a href="#home" class="sidebar-link active" data-target="home">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            <a href="#home" class="sidebar-link active" data-target="home" aria-current="page">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
                 <span>Início</span>
             </a>
             <a href="#systems" class="sidebar-link" data-target="systems">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
                 <span>Solicitações</span>
             </a>
             <a href="#manuals" class="sidebar-link" data-target="manuals">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
                 <span>Manuais</span>
             </a>
             <a href="#support" class="sidebar-link" data-target="support">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
                 <span>Suporte</span>
             </a>
         </nav>
     </aside>
 
     <!-- ===== CONTEÚDO PRINCIPAL ===== -->
-    <main class="main-content">
+    <main class="main-content" id="main-content">
 
-        <!-- ===== HOME (HERO REDSENHADO) ===== -->
-        <section class="page-section active" id="home">
+        <!-- ===== HOME ===== -->
+        <section class="page-section active" id="home" aria-labelledby="home-title">
             <div class="hero">
-                <!-- Fundo Animado -->
-                <div class="hero-bg-animation">
+                <div class="hero-bg-animation" aria-hidden="true">
                     <div class="orb orb-1"></div>
                     <div class="orb orb-2"></div>
                     <div class="orb orb-3"></div>
                 </div>
-                
-                <!-- Conteúdo -->
                 <div class="hero-content">
-                    <h1 class="hero-title">
+                    <h1 class="hero-title" id="home-title">
                         Portal de <span class="brand-orange">Solicitações</span> e <span class="brand-blue">Manuais</span>
                     </h1>
                     <p class="hero-subtitle">
                         Acesso aos sistemas, manuais e materiais de apoio centralizados.<br>
                         Otimizando seu dia a dia na <strong class="brand-blue">SETEG</strong>.
                     </p>
-
-                    <!-- Dashboard de Métricas (Cards Tecnológicos) -->
                     <div class="hero-dashboard">
                         <div class="glass-card stat-widget">
-                            <div class="widget-icon icon-blue">
+                            <div class="widget-icon icon-blue" aria-hidden="true">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
                             </div>
                             <div class="widget-info">
-                                <span class="widget-number">9</span>
+                                <span class="widget-number">3</span>
                                 <span class="widget-label">Sistemas Integrados</span>
                             </div>
                         </div>
-
                         <div class="glass-card stat-widget">
-                            <div class="widget-icon icon-purple">
+                            <div class="widget-icon icon-purple" aria-hidden="true">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
                             </div>
                             <div class="widget-info">
@@ -84,13 +78,12 @@
                                 <span class="widget-label">Manual Disponível</span>
                             </div>
                         </div>
-
                         <div class="glass-card stat-widget">
-                            <div class="widget-icon icon-orange">
+                            <div class="widget-icon icon-orange" aria-hidden="true">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
                             </div>
                             <div class="widget-info">
-                                <span class="widget-number">10+</span>
+                                <span class="widget-number">9</span>
                                 <span class="widget-label">Suporte Técnico</span>
                             </div>
                         </div>
@@ -100,130 +93,152 @@
         </section>
 
         <!-- ===== SISTEMAS ===== -->
-        <section class="page-section" id="systems">
+        <section class="page-section" id="systems" aria-labelledby="systems-title">
             <div class="section-container">
                 <div class="section-header">
-                    <h2 class="section-title">Sistemas de Solicitação</h2>
+                    <h2 class="section-title" id="systems-title">Sistemas de Solicitação</h2>
                     <p class="section-subtitle">Clique no card para acessar o sistema.</p>
                 </div>
                 <div class="systems-grid" id="systemsGrid">
-                    <!-- 1: Cartografia -->
                     <article class="system-card fade-up" data-search="cartografia mapa georreferenciamento planta sgc topografia">
-                        <div class="system-card-icon icon-blue">
+                        <div class="system-card-icon icon-blue" aria-hidden="true">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 21 18 21 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
                         </div>
                         <h3 class="system-card-title">Cartografia</h3>
                         <p class="system-card-desc">Mapas, plantas e georreferenciamento.</p>
-                        <a href="https://sgc-seteg.vercel.app/" target="_blank" class="system-card-link">Acessar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                        <a href="https://sgc-seteg.vercel.app/" target="_blank" class="system-card-link">Acessar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
                     </article>
-
-                    <!-- 2: Peças Gráficas -->
                     <article class="system-card fade-up" data-search="peças gráficas arte design banner sga material visual">
-                        <div class="system-card-icon icon-purple">
+                        <div class="system-card-icon icon-purple" aria-hidden="true">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688"/></svg>
                         </div>
                         <h3 class="system-card-title">Peças Gráficas</h3>
                         <p class="system-card-desc">Artes, banners e materiais visuais.</p>
-                        <a href="https://sga-seteg.vercel.app/" target="_blank" class="system-card-link">Acessar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                        <a href="https://sga-seteg.vercel.app/" target="_blank" class="system-card-link">Acessar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
                     </article>
-
-                    <!-- 3: ART -->
                     <article class="system-card fade-up" data-search="art anotação responsabilidade técnica engenharia documento">
-                        <div class="system-card-icon icon-green">
+                        <div class="system-card-icon icon-green" aria-hidden="true">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/></svg>
                         </div>
                         <h3 class="system-card-title">ART</h3>
                         <p class="system-card-desc">Anotação de Responsabilidade Técnica.</p>
-                        <a href="https://sgart-seteg.vercel.app/" target="_blank" class="system-card-link">Acessar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-                        </article>
+                        <a href="https://sgart-seteg.vercel.app/" target="_blank" class="system-card-link">Acessar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                    </article>
+                </div>
+            </div>
+        </section>
 
         <!-- ===== MANUAIS ===== -->
-        <section class="page-section" id="manuals">
+        <section class="page-section" id="manuals" aria-labelledby="manuals-title">
             <div class="section-container">
                 <div class="section-header">
-                    <h2 class="section-title">Manuais e Instruções</h2>
+                    <h2 class="section-title" id="manuals-title">Manuais e Instruções</h2>
                     <p class="section-subtitle">Documentação organizada para facilitar a elaboração de produtos</p>
                 </div>
                 <div class="manuals-grid" id="manualsGrid">
-            
-                <!-- Manual da Cartografia -->
-<article class="manual-item fade-up" data-category="sistemas" data-search="sgc cartografia mapa tutorial guia sistema">
-    <div class="manual-item-icon icon-blue">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 21 18 21 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
-    </div>
-    <div class="manual-item-content">
-        <h4 class="manual-item-title">Manual da Cartografia</h4>
-        <p class="manual-item-desc">Passo a passo para elaboração de croquis e mapas</p>
-        <a href="https://manual-cartografia.vercel.app/" target="_blank" rel="noopener noreferrer" class="manual-item-btn">
-            Abrir manual 
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-        </a>
-    </div>
-</article>
+                    <article class="manual-item fade-up" data-category="sistemas" data-search="sgc cartografia mapa tutorial guia sistema">
+                        <div class="manual-item-icon icon-blue" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 21 18 21 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+                        </div>
+                        <div class="manual-item-content">
+                            <h4 class="manual-item-title">Manual da Cartografia</h4>
+                            <p class="manual-item-desc">Passo a passo para elaboração de croquis e mapas</p>
+                            <a href="https://manual-cartografia.vercel.app/" target="_blank" rel="noopener noreferrer" class="manual-item-btn">
+                                Abrir manual 
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </a>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
 
         <!-- ===== SUPORTE ===== -->
-        <section class="page-section" id="support">
+        <section class="page-section" id="support" aria-labelledby="support-title">
             <div class="section-container">
                 <div class="section-header">
-                    <h2 class="section-title">Canais de Suporte SETEG</h2>
+                    <h2 class="section-title" id="support-title">Canais de Suporte SETEG</h2>
                     <p class="section-subtitle">Contate o responsável do seu setor.</p>
                 </div>
                 <div class="support-grid">
+                    <!-- Geoambiental -->
                     <div class="support-card fade-up">
-                        <div class="support-card-icon icon-blue">
+                        <div class="support-card-icon icon-blue" aria-hidden="true">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 21 18 21 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
                         </div>
                         <h4 class="support-card-title">Geoambiental</h4>
                         <p class="support-responsible">Responsável: <strong>Lizabeth Silva</strong></p>
                         <p class="support-email">lizabeth@setegce.com</p>
                     </div>
-
+                    <!-- Regulatório -->
                     <div class="support-card fade-up">
-                        <div class="support-card-icon icon-green">
+                        <div class="support-card-icon icon-green" aria-hidden="true">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                         </div>
                         <h4 class="support-card-title">Regulatório</h4>
                         <p class="support-responsible">Responsável: <strong>Juliana Vicente</strong></p>
                         <p class="support-email">juliana@setegce.com</p>
                     </div>
-
+                    <!-- Biótico -->
                     <div class="support-card fade-up">
-                        <div class="support-card-icon icon-emerald">
+                        <div class="support-card-icon icon-emerald" aria-hidden="true">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c4-3 8-7.5 8-12a8 8 0 1 0-16 0c0 4.5 4 9 8 12z"/><path d="M9 12l2 2 4-4"/></svg>
                         </div>
                         <h4 class="support-card-title">Biótico</h4>
                         <p class="support-responsible">Responsável: <strong>Marcelo Holderbaum</strong></p>
                         <p class="support-email">marcelo@setegce.com</p>
                     </div>
-
+                    <!-- Recursos Humanos -->
                     <div class="support-card fade-up">
-                        <div class="support-card-icon icon-pink">
+                        <div class="support-card-icon icon-pink" aria-hidden="true">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
                         </div>
                         <h4 class="support-card-title">Recursos Humanos</h4>
                         <p class="support-responsible">Responsável: <strong>Laicia Nascimento</strong></p>
                         <p class="support-email">rh@setegce.com</p>
                     </div>
-
+                    <!-- Financeiro -->
                     <div class="support-card fade-up">
-                        <div class="support-card-icon icon-yellow">
+                        <div class="support-card-icon icon-yellow" aria-hidden="true">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
                         </div>
                         <h4 class="support-card-title">Financeiro</h4>
                         <p class="support-responsible">Responsável: <strong>Nadia Vieira</strong></p>
                         <p class="support-email">nadia@setegce.com</p>
                     </div>
-
+                    <!-- Administrativo -->
                     <div class="support-card fade-up">
-                        <div class="support-card-icon icon-indigo">
+                        <div class="support-card-icon icon-indigo" aria-hidden="true">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/></svg>
                         </div>
                         <h4 class="support-card-title">Administrativo</h4>
                         <p class="support-responsible">Responsável: <strong>Alexsandra Ribeiro</strong></p>
                         <p class="support-email">alexsandra@setegce.com</p>
+                    </div>
+                    <!-- ✅ NOVOS: PMO, Inovação, Comercial -->
+                    <div class="support-card fade-up">
+                        <div class="support-card-icon icon-purple" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                        </div>
+                        <h4 class="support-card-title">PMO</h4>
+                        <p class="support-responsible">Responsável: <strong>Eveline Mesquina</strong></p>
+                        <p class="support-email">eveline@setegce.com</p>
+                    </div>
+                    <div class="support-card fade-up">
+                        <div class="support-card-icon icon-cyan" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                        </div>
+                        <h4 class="support-card-title">Inovação</h4>
+                        <p class="support-responsible">Responsável: <strong>Ricardo Silveira</strong></p>
+                        <p class="support-email">ricardo@setegce.com</p>
+                    </div>
+                    <div class="support-card fade-up">
+                        <div class="support-card-icon icon-orange" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        </div>
+                        <h4 class="support-card-title">Comercial</h4>
+                        <p class="support-responsible">Responsável: <strong>Mariângela Ciodaro</strong></p>
+                        <p class="support-email">mariangela@setegce.com</p>
                     </div>
                 </div>
             </div>
@@ -232,7 +247,7 @@
         <!-- ===== RODAPÉ FIXO ===== -->
         <footer class="footer">
             <div class="footer-content">
-                <span> Versão: V1.0.0</span>
+                <span>Versão: V1.0.0</span>
                 <span class="footer-separator">•</span>
                 <span>© Desenvolvido por Seteg Soluções Geológicas e Ambientais</span>
                 <span class="footer-separator">•</span>
